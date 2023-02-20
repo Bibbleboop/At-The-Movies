@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background: #A02323;
+    background: -webkit-linear-gradient ( to right, #EE82EE, #c90076);
+    background: linear-gradient(to right, #ee82ee, #c90076);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: poppins    
+    font-family
+}
