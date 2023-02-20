@@ -2,6 +2,32 @@
     box-sizing: border-box;
 }
 
+.parentContainer {
+    display: flex;
+    background-color: lightblue;
+    padding: 20px;
+    margin: 20px;
+    border: green solid 20px;
+    height: flex;
+    width: auto;
+}
+.flexChild {
+    background-color: red;
+    padding: 10px;
+    font-family: poppins;
+    text-align: auto;
+    margin: 10px;
+    height: 250px;
+}
+.flexImage {
+    display: flex;
+    height: auto;
+    width: auto;
+    border: royalblue solid 10px;
+    margin: yellow 10px;
+    padding: cyan 10px;
+}
+
 body {
     background: #A02323;
     background: -webkit-linear-gradient ( to right, #EE82EE, #c90076);
@@ -11,6 +37,15 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: poppins    
-    font-family
+    font-family: poppins;    
+    margin: 20px red;
+    border: 20px blue;
+    padding: 20px green;
+    font: #959595
+}
+.title {
+    background: shadow;
+    font-align: center;
+    font-family: poppins;
+
 }
