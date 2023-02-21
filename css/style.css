@@ -1,23 +1,42 @@
 *{
     box-sizing: border-box;
 }
-
+.typeholder {
+    display: flex;
+    background-color: red;
+    font-color: yellow;
+    text-align: center;
+}
+.pokemondeets {
+    border: black 40px;
+}
 .parentContainer {
     display: flex;
-    background-color: lightblue;
+    background-color: blue;
     padding: 20px;
     margin: 20px;
-    border: green solid 20px;
+    border: royalblue solid 20px;
+    height: flex;
+    width-min; 250px;
+}
+
+.parentContainer2 {
+    display: flex;
+    background-color: rubyred;
+    padding: 20px;
+    margin: 10px;
+    border: royalblue solid 20px;
     height: flex;
     width: auto;
 }
 .flexChild {
-    background-color: red;
+    background-color: skyblue;
     padding: 10px;
     font-family: poppins;
-    text-align: auto;
+    text-align: centre;
+    width-min: 150px;
     margin: 10px;
-    height: 250px;
+    height: 50px;
 }
 .flexImage {
     display: flex;
@@ -43,9 +62,21 @@ body {
     padding: 20px green;
     font: #959595
 }
-.title {
+h1{
     background: shadow;
     font-align: center;
     font-family: poppins;
+    font-size: 45px;
+    font-color: red;
+    margin-bottom: 1px;
+    
+}
+
+#contents-box {
+    border: black solid 20px;
+    height: 500px;
+    width: 500px;
+    margin: 25px red solid;
+    border-radius: 15px;
 
 }
