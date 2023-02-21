@@ -7,7 +7,7 @@ My PokeAnywhere App: PokeOntheGO!
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Collaboratorss](#collaborators)
+- [Collaborators](#collaborators)
 - [Contact](#contact)
 
 ## Description
