@@ -7,9 +7,7 @@
     font-color: yellow;
     text-align: center;
 }
-.pokemondeets {
-    border: black 40px;
-}
+
 .parentContainer {
     display: flex;
     background-color: blue;
@@ -71,12 +69,31 @@ h1{
     margin-bottom: 1px;
     
 }
-
-#contents-box {
+.pokemon-info {
+    height: 500px;
+    weight: 250px;
+    background-color: purple;
+}
+.pokemondeets {
+    border: black 40px;
+    background-colour: yellow;  
+}
+.pokemon-img {
+    background-color: orange;
+}
+.pokemon-types {
+    height: 500px;
+    weight: 250px;
+    background-color: cyan;
+}
+.contentsbox {
+    display: flex;
     border: black solid 20px;
     height: 500px;
     width: 500px;
     margin: 25px red solid;
     border-radius: 15px;
 
+    background-color: green;    
 }
+.

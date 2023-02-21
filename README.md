@@ -7,7 +7,7 @@ My PokeAnywhere App: PokeOntheGO!
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Collaborators](#collaborators)
+- [Citations](#citations)
 - [Contact](#contact)
 
 ## Description
@@ -30,19 +30,20 @@ My PokeAnywhere App: PokeOntheGO!
 
 ```
 
-## Collaborators
+## Thanks to the following people: 
 
 ```
-THE TEAM
 
-N Cahill
-
+Fetch url guidance from Aiaru Mukhamedyarova - article on Medium
+Kenny Yip Coding  - YouTube
+APIKey https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0
+I couldn't have done it without you!
 ```
 
 ## Contact
 
 ```
-CONTACT US
+CONTACT THE TEAM  - N CAHILL
 
 Reach out to us on GitHub with queries 
 
