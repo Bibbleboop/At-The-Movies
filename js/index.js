@@ -10,6 +10,7 @@ let clearSearch = function () {
         console.log(type)
     }
 }
+// let pokemonChars = document.getElementById("name" + "types" + "sprites.front_shiny");
 
 // Show Pokemon API Url to use from Pokeapi.io ensuring using latest version
 let url = "https://pokeapi.co/api/v2/pokemon" + "name" + "types" + "sprites.front_shiny";
@@ -20,7 +21,7 @@ let pokemonsName = document.getElementById("name");
 let pokemonsImg = document.getElementById("sprites.front_shiny");
 
 //Buttons used to input and select 
-let namebtn = document.getElementById("button")[0];
+let namebtn = document.getElementById("button");
 console.log(namebtn);
 let input = document.getElementById("userinput");
 let randombtn = document.getElementById("random");
@@ -35,10 +36,10 @@ let randombtn = document.getElementById("random");
 //     console.log(error)})
 // }
 // API response required to fetch from database using await as asynchronus
-// // let pokemonChars = response.json();
-// async function 
-// let pokemonChars = await fetch(url);
-// document.getElementById("url").innerHTML = pokemonChars;
+// let pokemonChars = response.json();
+//async function 
+let pokemonChars = await fetch(url);
+document.getElementById("url").innerHTML = pokemonChars;
 
 // let response = fetch(url); 
 console.log("Pokemon Characters" + pokemonChars);
