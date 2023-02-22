@@ -1,29 +1,20 @@
 //variables for API data & defining buttons
-
 // TEST with first 150 instead of entire pokemon list before run all data
 const pokemonCount = 150;
-
 // ****** check if this works
 //to clear th escreen for new search
 let clearSearch = function () {
-    for (let type of pokemonTypes) {
+    for (let type of Types) {
         console.log(type)
     }
 }
-
 // Show Pokemon API Url to use from Pokeapi.io ensuring using latest version
 let url = "https://pokeapi.co/api/v2/pokemon" + "name" + "types" + "sprites.front_shiny";
 
 // Matching with lables in Resource List  
-let pokemonsTypes = document.getElementById("types");
-let pokemonsName = document.getElementById("name");
-let pokemonsImg = document.getElementById("sprites.front_shiny");
-
-//Buttons used to input and select 
-let namebtn = document.getElementById("button")[0];
-console.log(namebtn);
-let input = document.getElementById("userinput");
-let randombtn = document.getElementById("random");
+let pokemonsTypes = pokemonChars["types"];
+let pokemonsName = pokemonChars["name"];
+let pokemonsImg = pokemonChars["sprites"]["front_shiny"];
 
 // Fetch API fetch the URL (promise in js) This gets the raw data that is transformed into JSON - also catches & console logs any errors
 // let searchPokemon = function (apiobj) {
@@ -57,7 +48,11 @@ let pokemonHtml = document.querySelector('.pokemon')
 let toAddin = 'My Name is : ${data.name}, whats yours?'
 // // using innerHTML, can add in the HTML
 // pokemonHtml.innerHTML = to Addin ****** check this 
-
+//Buttons used to input and select 
+let namebtn = document.querySelectorTagName("button")[0];
+console.log(namebtn);
+let input = document.querySelectorId("userinput");
+let randombtn = document.querySelectorId("random");
 
 // Local storage
 

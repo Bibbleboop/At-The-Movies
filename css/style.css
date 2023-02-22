@@ -1,31 +1,41 @@
 *{
     box-sizing: border-box;
+    border-radius: 105px;
+
+    /* border: #f72585 dash 3px; */
 }
-.typeholder {
+.typeHolder {
     display: flex;
-    background-color: red;
-    font-color: yellow;
+    background-color: #7209b7;
+    font-color: #ffd500;
     text-align: center;
 }
-
+.inputText {
+    background-colour: #f72585;
+    border: #ffd500 solid 5px;
+}
 .parentContainer {
     display: flex;
-    background-color: blue;
+    background-color: #560bad;
     padding: 20px;
     margin: 20px;
-    border: royalblue solid 20px;
     height: flex;
     width-min; 250px;
+    border: #ffd500 solid 5px;
 }
-
+p {
+    text: bold;
+    font-family: poppins;
+    font-size:20px;
+}
 .parentContainer2 {
     display: flex;
-    background-color: rubyred;
+    background-color: #f72585;
     padding: 20px;
     margin: 10px;
-    border: royalblue solid 20px;
     height: flex;
     width: auto;
+    border: #ffd500 solid 5px;
 }
 .flexChild {
     background-color: skyblue;
@@ -36,13 +46,31 @@
     margin: 10px;
     height: 50px;
 }
+.nameInput {
+    background-color: #fdc500;
+    padding: 10px;
+    font-family: poppins;
+    text-align: auto;
+    width-min: 150px;
+    margin: 10px;
+    height: 100px;
+}
+.nameSearch {
+    background-color: #fdc500;
+    padding: 10px;
+    font-family: poppins;
+    text-align: centre;
+    width-min: 150px;
+    margin: 10px;
+    height: 50px;
+    border: #7209b7 solid 5px;
+}
 .flexImage {
     display: flex;
     height: auto;
     width: auto;
-    border: royalblue solid 10px;
-    margin: yellow 10px;
-    padding: cyan 10px;
+    margin: #fdc500 10px;
+    padding: #560bad 10px;
 }
 
 body {
@@ -56,7 +84,6 @@ body {
     align-items: center;
     font-family: poppins;    
     margin: 20px red;
-    border: 20px blue;
     padding: 20px green;
     font: #959595
 }
@@ -69,31 +96,65 @@ h1{
     margin-bottom: 1px;
     
 }
-.pokemon-info {
+.pokemonsInfo {
     height: 500px;
     weight: 250px;
-    background-color: purple;
+    background-color: #7209b7;
 }
-.pokemondeets {
-    border: black 40px;
-    background-colour: yellow;  
-}
-.pokemon-img {
-    background-color: orange;
-}
-.pokemon-types {
+.pokemonsDeets {
     height: 500px;
     weight: 250px;
-    background-color: cyan;
+    background-color: #7209b7; 
+    
 }
-.contentsbox {
+.pokemonsImg {
+    height: 500px;
+    weight: 250px;
+    background-color: #7209b7;
+}
+.pokemonsTypes {
+    height: 500px;
+    weight: 250px;
+    background-color: #7209b7;
+}
+.pokemonsName {
+    height: 500px;
+    weight: 250px;
+    background-color: #7209b7;
+}
+.MainBox {
     display: flex;
-    border: black solid 20px;
+    border: #ffd500 solid 10px;
     height: 500px;
     width: 500px;
     margin: 25px red solid;
-    border-radius: 15px;
-
-    background-color: green;    
+    
+    background-color: royalblue;    
 }
-.
+.button {
+    background-colour: #f72585;
+}
+/* CSS */
+.button-1 {
+    background-color: #f72585;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: poppins;
+    font-size: 14px;
+    font-weight: 500;
+    height: 70px;
+    line-height: 20px;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    transition: color 100ms;
+    vertical-align: baseline;
+    touch-action: manipulation;
+  }
+  .button-1:hover,
+  .button-1:focus {
+    background-color: #F082AC;
+  }
