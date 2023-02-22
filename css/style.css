@@ -12,7 +12,7 @@
 }
 .inputText {
     background-colour: #f72585;
-    border: #ffd500 solid 5px;
+    border: #ffd500 solid 6px;
 }
 .parentContainer {
     display: flex;
@@ -21,9 +21,9 @@
     margin: 20px;
     height: flex;
     width-min; 250px;
-    border: #ffd500 solid 5px;
+    border: #ffd500 solid 6px;
 }
-p {
+<p> {
     text: bold;
     font-family: poppins;
     font-size:20px;
@@ -35,7 +35,7 @@ p {
     margin: 10px;
     height: flex;
     width: auto;
-    border: #ffd500 solid 5px;
+    border: #ffd500 solid 6px;
 }
 .flexChild {
     background-color: skyblue;
@@ -63,7 +63,7 @@ p {
     width-min: 150px;
     margin: 10px;
     height: 50px;
-    border: #7209b7 solid 5px;
+    border: #7209b7 solid 6px;
 }
 .flexImage {
     display: flex;
@@ -104,7 +104,6 @@ h1 {
     height: 500px;
     weight: 250px;
     background-color: #7209b7; 
-    
 }
 .pokemonsImg {
     height: 500px;
@@ -123,7 +122,7 @@ h1 {
 }
 .MainBox {
     display: flex;
-    border: #ffd500 solid 10px;
+    border: #ffd500 solid 6px;
     height: 500px;
     width: 500px;
     margin: 25px red solid;
@@ -136,7 +135,7 @@ h1 {
 /* CSS */
 .button-1 {
     background-color: #f72585;
-    border-radius: 8px;
+    border-radius: 105px;
     box-sizing: border-box;
     color: #FFFFFF;
     cursor: pointer;
@@ -160,7 +159,12 @@ h1 {
 }
 .startHereBtn {
     background-color:#ffd500;
+    border: #560bad 6px;
     font-size: 50px;
+    font-family: poppins;
+    border-radius: 105px;
+    padding: 40px;
+    
 }
 
 .hidden {
