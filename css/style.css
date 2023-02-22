@@ -87,15 +87,14 @@ body {
     padding: 20px green;
     font: #959595
 }
-h1{
+h1 {
     background: shadow;
     font-align: center;
     font-family: poppins;
     font-size: 45px;
     font-color: red;
     margin-bottom: 1px;
-    
-}
+    }
 .pokemonsInfo {
     height: 500px;
     weight: 250px;
@@ -153,8 +152,17 @@ h1{
     transition: color 100ms;
     vertical-align: baseline;
     touch-action: manipulation;
-  }
-  .button-1:hover,
-  .button-1:focus {
+}
+.button-1 {
+    hover;
+    focus; 
     background-color: #F082AC;
-  }
+}
+.startHereBtn {
+    background-color:#ffd500;
+    font-size: 50px;
+}
+
+.hidden {
+    display: none;
+}
