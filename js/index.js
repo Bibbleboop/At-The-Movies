@@ -6,7 +6,8 @@
 // STORE THIS LOCALLY WITH USERS HISTORY
 // HIDE AND CLEAR BUTTONS 
 //
-
+let button = document.getElementById("namebtn");
+// document.getElementById().innerHTML ="You chose: " + x.value;
 
 //variables for API data & defining buttons
 
@@ -21,18 +22,26 @@ let pokemonsChars = document.getElementById("name" + "types" + "sprites/front/sh
 // let url = "https://pokeapi.co/api/v2/pokemon/{ + "name/" + "types/" + "sprites/front/shiny"};
 
 // let url = "https://pokeapi.co/api/v2/pokemon/item/master-ball/"
-// GET https://pokeapi.co/api/v2/ability/{id or name}/
-let url ="https://pokeapi.co/api/v2/ability/{picachu}/"
+
 // Matching with lables in Resource List  
-let pokemonsName = document.getElementById("name");
+// let pokemonsName = document.getElementById("nameBtn").addEventListener("input", pokemonsName);
+function pokemonsName(){event.preventDefault();
+// console.log(pokemonsName);// GET https://pokeapi.co/api/v2/ability/{id or name}/
+let url ="https://pokeapi.co/api/v2/ability/{pikachu}/"
+ // make a get request to url
+
+fetch(url)
+.then(function(response) {
+  // request was successful
+  if (response.ok) {
+    response.json().then(function(data) {console.log(data)
+    });
+}
+});
+};
 let pokemonsTypes = document.getElementById("types");
 let pokemonsImg = document.getElementById("sprites.front_shiny");
 
-// namebtn  - when enter characher name eg Pickachu  - to search using API
-function pokemonsName() {
-    let x document.getElementById("namebtn");
-    document.getElementById().innerHTML ="You chose: " + x.value;
-}
 
 //Buttons used to input and select 
 let namebtn = document.getElementById("pokemonsName");
@@ -95,3 +104,7 @@ let toAddin = 'My Name is : ${data.name}, whats yours?'
 
 // Local storage
 
+
+
+
+// button.addEventListener("click",searchfunction);
