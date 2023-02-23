@@ -1,31 +1,45 @@
+// LOGIC FOR THIS PROJECT
+// START BUTTON TO INTRODUCE SEARCH BUTTONS MODAL
+// SEARCH BY NAME, RANDOM BUTTON, SEARCH BY TYPE
+// STORE THESE SEARCHES AND RESULTS LCOALLY
+// ASK WHAT IS YOUR NAME
+// STORE THIS LOCALLY WITH USERS HISTORY
+// HIDE AND CLEAR BUTTONS 
+//
+
+
 //variables for API data & defining buttons
 
 // TEST with first 150 instead of entire pokemon list before run all data
-const pokemonCount = 150;
+const pokemonCount = 10;
 
 // ****** check if this works
 //to clear th escreen for new search
-let clearSearch = function () {
-    for (let type of pokemonTypes) {
-        console.log(type)
-    }
-}
-// let pokemonChars = document.getElementById("name" + "types" + "sprites.front_shiny");
+// let clearSearch = function () {
+//     for (let type of pokemonsChars) {
+//         console.log(type)
+//     }
+// }
+
+let pokemonsChars = document.getElementById("name" + "types" + "sprites/front/shiny");
 
 // Show Pokemon API Url to use from Pokeapi.io ensuring using latest version
-let url = "https://pokeapi.co/api/v2/pokemon" + "name" + "types" + "sprites.front_shiny";
+// let url = "https://pokeapi.co/api/v2/pokemon/{ + "name/" + "types/" + "sprites/front/shiny"};
+
+let url = "https://pokeapi.co/api/v2/pokemon/item/master-ball/"
 
 // Matching with lables in Resource List  
-let pokemonsTypes = document.getElementById("types");
 let pokemonsName = document.getElementById("name");
+let pokemonsTypes = document.getElementById("types");
 let pokemonsImg = document.getElementById("sprites.front_shiny");
 
 //Buttons used to input and select 
 let namebtn = document.getElementById("button");
 console.log(namebtn);
 let input = document.getElementById("userinput");
+console.log(input);
 let randombtn = document.getElementById("random");
-
+console.log(randombtn);
 // Fetch API fetch the URL (promise in js) This gets the raw data that is transformed into JSON - also catches & console logs any errors
 // let searchPokemon = function (apiobj) {
 // fetch(url)
@@ -36,13 +50,15 @@ let randombtn = document.getElementById("random");
 //     console.log(error)})
 // }
 // API response required to fetch from database using await as asynchronus
+let response = fetch(url); 
+console.log("Pokemon Characters" + pokemonsChars);
 // let pokemonChars = response.json();
 //async function 
-let pokemonChars = await fetch(url);
-document.getElementById("url").innerHTML = pokemonChars;
+// let pokemonChars = await fetch(url);
+// document.getElementById("url").innerHTML = "pokemonsChars";
 
-// let response = fetch(url); 
-console.log("Pokemon Characters" + pokemonChars);
+
+
 // // Object  - destructured
 // let {url, pokemonsName,pokemonsType} = apiobj 
 // // URL String
@@ -58,6 +74,13 @@ let pokemonHtml = document.querySelector('.pokemon')
 let toAddin = 'My Name is : ${data.name}, whats yours?'
 // // using innerHTML, can add in the HTML
 // pokemonHtml.innerHTML = to Addin ****** check this 
+
+
+//Try this to make button for searches-->
+//Add event handler -->
+button.addEventListener ("click", function() {
+  alert("did something");
+});
 
 
 // Local storage

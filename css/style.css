@@ -159,7 +159,7 @@ h1 {
 }
 .startHereBtn {
     background-color:#ffd500;
-    border: #560bad 6px;
+    border: #560bad solid 6px;
     font-size: 50px;
     font-family: poppins;
     border-radius: 105px;
@@ -169,4 +169,13 @@ h1 {
 
 .hidden {
     display: none;
+}
+.userNameBtn {
+    background-color:#f72585;
+    font-size: 20px;
+    border: #560bad solid 6px;
+    font-family: poppins;
+    border-radius: 105px;
+    padding: 40px;
+    
 }
