@@ -35,19 +35,58 @@
             Start Here !
         </button> 
 <!--**** ********************************************* 3.10 section class"container hidden -->
-    <section class="container hidden" id="id01">
-        <div class="parentContainer">       
+
+
+<section class="container hidden" id="id01">
+    <div class="parentContainer">     
+        
         <div class="flexChild">
             RANDOM SEARCH
         </div>
-        <div class="flexChild">
-            SEARCH BY NAME
+
+        <div class="nameBtn" input type="search" id="nameBtn" placeholder="SEARCH.. Pikachu" value="(x)" onsearch="pokemonsName()">
+            SEARCH pikachu
         </div>
-        <div class="flexChild">
-            SEARCH BY TYPES
+
+        <button class="nameBtn" input type="search" id="nameBtn" onclick="document.getElementById(pokemonsName)" placeholder="SEARCH.. Pikachu" onsearch="pokemonsName()">
+        </button>
+        
+        <!-- <input class="pokemonsName"
+                type="button"
+                value="SEARCH HERE" -->
+
+        <div class="nameBtn" button class="nameBtn" input type="nameBtn" id="nameBtn" onsearch="pokemonsName ()" placeholder="Pikachu"> SEARCH 
+        <!-- button class="nameBtn" SEARCH PICACHU   -->
+
         </div>
+    </div>
+</section>
+<br><br><br><br><br><br>
+
+
+        <!-- <div class="flexChild">
+            RANDOM SEARCH
         </div>
-    </section>
+
+    </div>
+</section> -->
+
+
+    <!-- <section class="container hidden" id="id01">
+        <div class="parentContainer">       
+            <div class="flexChild">
+                RANDOM SEARCH
+            </div>
+            <div class="nameBtn" >
+            <button class="nameBtn">
+                SEARCH BY NAME
+            </button>
+            </div>
+            <div class="flexChild">
+            SEARCH TYPES
+            </div>
+        </div>
+    </section> -->
 
     <!-- <form action="*************************************">
     <section class="parentContainer">
@@ -59,16 +98,21 @@
         </div>
     </section> --> 
     
-    <section class="userInput container">
+    <!-- <section class="userInput container">
         <button class="userNameBtn" onclick="document.getElementById('user').style.display='block'">
         Whats Your Name?</button>
 
-        <!-- <button class="startHereBtn">Start</button>    -->
-        <button class="inputText" placeholder="      Whats Your Name?" style="background:transparent"></button> 
+        <!- <button class="startHereBtn">Start</button>    -->
 
-        <button type="submit"><i style="fa fa search;max-width:300px;max-height:200px"></i></button> 
+        <!-- <button class="inputText" placeholder="      Whats Your Name?" style="background:transparent"></button> 
+
+        <button type="submit"><i style="fa-solid fa-xl search;max-width:300px;max-height:200px"></i></button> 
     </form> 
-    </section>
+    </section> -->
+
+    <!-- Fontawsome styles  for icon buttons-->
+    <!-- <i class="fa-solid fa-user">Whats your Name</i> -->
+
 <!-- 
     <form class="nameSearch" style="margin:auto;max-width:300px max-height:200px">
         <input type="text" placeholder="Pokemon Name..." name="search2">
@@ -128,6 +172,6 @@
     <script src ="./js/index.js"></script>
     </body>
 </html>
-<footer>        
+<!-- <footer>        
                             Made with love using POKEAPI. 
-                        </footer>
+                        </footer> -->
