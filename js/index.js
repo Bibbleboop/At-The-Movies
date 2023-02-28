@@ -27,7 +27,7 @@ let pokemonsChars = document.getElementById("name" + "types" + "sprites/front/sh
 // let pokemonsName = document.getElementById("nameBtn").addEventListener("input", pokemonsName);
 function pokemonsName(){event.preventDefault();
 // console.log(pokemonsName);// GET https://pokeapi.co/api/v2/ability/{id or name}/
-let url ="https://pokeapi.co/api/v2/ability/{pikachu}/"
+let url ="https://pokeapi.co/api/v2/ability/{name}/"
  // make a get request to url
 
 fetch(url)
@@ -45,7 +45,7 @@ let pokemonsImg = document.getElementById("sprites.front_shiny");
 
 //Buttons used to input and select 
 let namebtn = document.getElementById("pokemonsName");
-console.log(namebtn);
+console.log("name");
 let input = document.getElementById("userinput");
 console.log(input);
 let randombtn = document.getElementById("random");
@@ -105,6 +105,13 @@ let toAddin = 'My Name is : ${data.name}, whats yours?'
 // Local storage
 
 
+// <!-- Load icon library -->
+// <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+// <!-- The form -->
+// <form class="example" action="action_page.php">
+//   <input type="text" placeholder="Search.." name="search">
+//   <button type="submit"><i class="fa fa-search"></i></button>
+// </form>
 
 // button.addEventListener("click",searchfunction);
