@@ -6,7 +6,7 @@
     border: #48cae4 dash 5px;
 }
 body {
-background-image: url("/images/AdobeStock_368779641.jpg");
+/* background-image: url("/images/AdobeStock_368779641.jpg"); */
 background-image: max 100%;
 /* max-width: 60px; */
   /* background-color: #7209b7; */ 
@@ -25,6 +25,13 @@ background-image: max 100%;
     border: black solid 2px;
     height: 40px;
     display: centre;
+  }
+  <h2> {
+    text: bold;
+    font-color: #0096c7;
+    font-family: poppins;
+    border: #0096c7 solid 60px;
+    font-size:20px;
   }
   @media only screen and (min-width: 600px) {
     /* For tablets: */
@@ -75,7 +82,7 @@ background-image: max 100%;
     font-color: #ffc500
     height: flex;
     width-min; 250px;
-    border: #0096c7 solid 6px;
+    border: #0096c7 solid 60px;
 }
 
 h5
@@ -144,6 +151,7 @@ h5
 .card-body {
     max-width: 300px;
     max-height: 300px;
+    font: #ffffff;
     radius:90%;
 }
 .card {
@@ -157,7 +165,8 @@ h5
 }
 displayresults {
     font: #90e0ef;
-    display:center;
+    padding: 0 0 0 50px;
+    display:right;
     col-lg-12 col-md-6 col-sm-1
     max-width: 100%;    
 }
