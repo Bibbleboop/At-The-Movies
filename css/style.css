@@ -1,50 +1,108 @@
 *{
     box-sizing: border-box;
-    border-radius: 105px;
-
-    /* border: #f72585 dash 3px; */
+    border-radius: 75px;
+    margin: #7209b7 6px;
+    padding: yellow 4px;
+    border: #48cae4 dash 5px;
 }
+body {
+background-image: url("/images/AdobeStock_368779641.jpg");
+/* background-image: max 100%; */
+/* max-width: 60px; */
+  /* background-color: #7209b7; */ */
+}
+/* .tiledBackground {
+    background-image: url("/images/Lights Camera Action.jpeg");
+    background-size: 1200px;
+    width: 300px;
+    height: 300px; */
+/* } */
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+  }
+  #filmform {
+    border: black solid 2px;
+    height: 40px;
+    display: centre;
+  }
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
 .typeHolder {
     display: flex;
     background-color: #7209b7;
-    font-color: #ffd500;
+    font-color: #0096c7;
     text-align: center;
 }
 .inputText {
-    background-colour: #f72585;
-    border: #ffd500 solid 6px;
+    background-colour: #48cae4;
+    border: #0096c7 solid 6px;
 }
 .parentContainer {
     display: flex;
-    background-color: #560bad;
+    /* background-color: #48cae4; */
     padding: 20px;
     margin: 20px;
+    font-color: #ffc500
     height: flex;
     width-min; 250px;
-    border: #ffd500 solid 6px;
+    border: #0096c7 solid 6px;
 }
-<p> {
+
+h5
+<h5> {
     text: bold;
+    font-color: #0096c7;
     font-family: poppins;
     font-size:20px;
 }
 .parentContainer2 {
     display: flex;
-    background-color: #f72585;
+    /* background-color: #48cae4; */
     padding: 20px;
     margin: 10px;
     height: flex;
     width: auto;
-    border: #ffd500 solid 6px;
+    border: #0096c7 solid 6px;
 }
-.flexChild {
-    background-color: #f72585;
+.card-img-top {
+    /* background-color: #48cae4; */
     padding: 10px;
     font-family: poppins;
     text-align: centre;
-    width-min: 150px;
+    width-min: 100%;
     margin: 10px;
-    height: 50px;
+    radius: 10%;
+    height: 500px;
 }
 .nameInput {
     background-color: #fdc500;
@@ -72,11 +130,35 @@
     margin: #fdc500 10px;
     padding: #560bad 10px;
 }
+.jumbotron {
+    background: #0e0e0e;
+    display: centre;
+    margin: solid 5px #0077b6;
+    radius: 69%;
 
+}
+.card-body {
+    /* col-lg-12 col-md-6 col-sm-1 */
+    max-width: 90%;
+}
+.card-body {
+    max-width: 300px;
+    max-height: 300px;
+    radius:90%;
+}
+.card {
+    background: none;
+}
+.display-4 {
+    font: #90e0ef;
+    display:center;
+    col-lg-12 col-md-6 col-sm-1
+    max-width: 100%;
+}
 body {
-    background: #A02323;
-    background: -webkit-linear-gradient ( to right, #EE82EE, #c90076);
-    background: linear-gradient(to right, #ee82ee, #c90076);
+    /* background: #A02323;
+    background: -webkit-linear-gradient ( to right, #d62828, #48cae4);
+    background: linear-gradient(to right, #a2d2ff, #d62828); */
 
     display: flex;
     flex-direction: column;
@@ -84,71 +166,58 @@ body {
     align-items: center;
     font-family: poppins;    
     margin: 20px red;
-    padding: 20px green;
-    font: #959595
+    padding: 20px;
+    font: #90e0ef;
 }
 h1 {
+    /* background: shadow; */
+    font-align: center;
+    font-family: poppins;
+    font-size: 45px;
+    color: #90e0ef;
+    margin-bottom: 1px;
+    }
+h5 {
     background: shadow;
     font-align: center;
     font-family: poppins;
     font-size: 45px;
-    font-color: red;
+    color: #ee82ee;
     margin-bottom: 1px;
     }
-.pokemonsInfo {
-    height: 500px;
-    weight: 250px;
-    background-color: #7209b7;
-}
-.pokemonsDeets {
-    height: 500px;
-    weight: 250px;
-    background-color: #7209b7; 
-}
-.pokemonsImg {
-    height: 500px;
-    weight: 250px;
-    background-color: #7209b7;
-}
-.pokemonsTypes {
-    height: 500px;
-    weight: 250px;
-    background-color: #7209b7;
-}
-.pokemonsName {
-    height: 500px;
-    weight: 250px;
-    background-color: #7209b7;
+.lead {
+    color: #90e0ef;
 }
 .MainBox {
     display: flex;
-    border: #ffd500 solid 6px;
+    border: #0096c7 solid 6px;
     height: 500px;
     width: 500px;
     margin: 25px red solid;
     
-    background-color: royalblue;    
+    /* background-color: royalblue;     */
 }
 .button {
-    background-colour: #f72585;
+    background-colour: #ee82ee;
 }
 /* CSS */
-.button-1 {
-    background-color: #f72585;
-    border-radius: 105px;
+.jumboton {
+    /* background-color: #48cae4; */
+    border-radius: 70px;
     box-sizing: border-box;
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
     cursor: pointer;
+    font-color: #ee82ee
     display: inline-block;
     font-family: poppins;
     font-size: 14px;
     font-weight: 500;
     height: 70px;
     line-height: 20px;
-    padding: 10px 16px;
+    padding: 86px;
     position: relative;
     text-align: center;
-    transition: color 100ms;
+    /* transition: color 100ms; */
     vertical-align: baseline;
     touch-action: manipulation;
 }
@@ -157,13 +226,13 @@ h1 {
     focus; 
     background-color: #F082AC;
 }
-.startHereBtn {
-    background-color:#ffd500;
-    border: #560bad solid 6px;
-    font-size: 50px;
+.btn {
+    /* background-color:#0096c7; */
+    border: #023e8a solid 3px;
+    font-size: 30px;
     font-family: poppins;
-    border-radius: 105px;
-    padding: 40px;
+    border-radius:99px;
+    padding: 10px;
     
 
 }
@@ -171,7 +240,7 @@ h1 {
     display: none;
 }
 .userNameBtn {
-    background-color:#f72585;
+    /* background-color:#48cae4; */
     font-size: 20px;
     border: #560bad solid 6px;
     font-family: poppins;
@@ -180,7 +249,7 @@ h1 {
     
 }
 .nameBtn {
-    background-color: #f72585;
+    background-color: #48cae4;
     padding: 10px;
     font-family: poppins;
     text-align: centre;
@@ -188,3 +257,26 @@ h1 {
     margin: 10px;
     height: 50px;
 }
+.searchboxheader {
+    background-color: #48cae4;
+    padding: 10px;
+    font-family: poppins;
+    text-align: centre;
+    width-min: 150px;
+    margin: 10px;
+    height: 50px;
+}
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
