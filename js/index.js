@@ -102,7 +102,7 @@ var displaydata = function (data){
 
 	yourselection.textcontent = "";
 	// displayresults.replacechildren(); 
-	displayresults(); 
+	// 	displayresults(); 
 	
 
 	searchinput.value ="";
