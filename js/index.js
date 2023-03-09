@@ -62,17 +62,26 @@ fetch('https://mdblist.p.rapidapi.com/?s=jaws&l=10', options)
 // Local storage
 let searchfunction = function(event) {
 	event.preventDefault();
-let film = searchinput.ariaValueMax.trim();
+let film = searchinput.value.trim();
 
 if (film) {
 
 	getfilmdata(film);
 
 	yourselection.textcontent = "";
+	displayresults.replacechildren();
 
-
+	searchinput.value ="";
+	}
+else {
+	alert("Your Selctionif not Valid");
 
 }
+};
+
+let getfilmdata = function (film) {
+	console.log(film)
+	
 }
 
 
