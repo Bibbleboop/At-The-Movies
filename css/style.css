@@ -155,6 +155,26 @@ h5
     col-lg-12 col-md-6 col-sm-1
     max-width: 100%;
 }
+displayresults {
+    font: #90e0ef;
+    display:center;
+    col-lg-12 col-md-6 col-sm-1
+    max-width: 100%;    
+}
+.displayresults {
+    font: #90e0ef;
+    display:center;
+    col-lg-12 col-md-6 col-sm-1
+    max-width: 100%;  
+    background-color: #fdc500;
+    padding: 10px;
+    font-family: poppins;
+    text-align: centre;
+    width-min: 150px;
+    margin: 10px;
+    height: 50px;
+    border: #7209b7 solid 6px;  
+}
 body {
     /* background: #A02323;
     background: -webkit-linear-gradient ( to right, #d62828, #48cae4);
