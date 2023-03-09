@@ -2,9 +2,29 @@
 let filmsform = document.querySelector("#filmform")
 let searchinput = document.querySelector(".input")
 let searchbtn = document.querySelector(".btn")
-let yourselection = document.querySelector("")
+let yourselection = document.querySelector("#displayresults")
 let filmdata = document.querySelector(".firstfilm")
-container1 =  document.querySelector("#container.")
+let container1 =  document.querySelector("#container")
+let films = []
+
+let loadfilms = function() {
+	let filmsloaded = localStorage.getItem("films")
+	if(!filmsloaded) {
+		return false;
+	}
+
+	filmsloaded = JSON.parse(filmsloaded);
+
+	for (let i=0; i <filmsloaded.length; i++) {
+		createbutton(filmsloaded[i])
+		films.push(filmsloaded)
+	}
+}
+let savefilms = function() {
+	localStorage.setItem("films", JSON.stringify(films));
+}
+
+
 // JAVASCRIPT FETCH START
 
 const options = {
