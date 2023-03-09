@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My PokeAnywhere App: A Poke through the Archives! </title>
+    <title>At The Movies</title>
 
 <!-- Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +16,7 @@
 
 <!-- Bootstrap CSS StyleSheets-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
 
 <!--Linked CSS -->
     <link rel="stylesheet" href="./css/style.css">
@@ -25,141 +26,126 @@
 <!-- Site Heading-->
 <body>
     <main>
-        <h1>Welcome to PokeAnywhere:
-            A Poke through the Archives
-        </h1>
+        <!-- <h1>At the Movies - Search Whats On
+        </h1> -->
     </main>
 
-<!--Open the Modal to get instructions on where to start when user clicks startHere-button-->
-<section class="startHere container">
-        <button class="startHereBtn" onclick="document.getElementById ('id01').style.display='block'">
-            Start Here !
-        </button>
-
-        
-    <section class="container hidden" id='id01'>
-        <div class="parentContainer">     
-            <!-- <div class="flexChild">
-                1
-            </div> -->
-        <!-- <div class="nameBtn"> -->
-            <!-- <div class="flexChild"> -->
-        <button class="nameBtn" input type="text" id="id01"  placeholder="SEARCH eg Pikachu" onsearch="pokemonsName()"> 
-            SEARCH.. Name
-        </div>
-        <!-- <div class="flexChild">
-            2
-        </div>   -->
-    </section>
-</section>
-        <!-- <div class="flexChild">
-            RANDOM SEARCH
-        </div>
-
-        <div class="nameBtn" input type="search" id="nameBtn" placeholder="SEARCH.. Pikachu" onsearch="pokemonsName()">
-            SEARCH pikachu
-        </div> -->
-
-
-        <!-- <input class="pokemonsName"
-                type="button"
-                value="SEARCH HERE" -->
-
-        <!-- <div class="nameBtn" button class="nameBtn" input type="nameBtn" id="nameBtn" onsearch="pokemonsName ()" placeholder="Pikachu"> SEARCH  -->
-        <!-- button class="nameBtn" SEARCH PICACHU   -->
-
-        <!-- </div>
-    </div>
-</section>
-<br><br><br><br><br><br> -->
-
-
-        <!-- <div class="flexChild">
-            RANDOM SEARCH
-        </div>
-
-    </div>
-</section> -->
-
-
-    <!-- <section class="container hidden" id="id01">
-        <div class="parentContainer">       
-            <div class="flexChild">
-                RANDOM SEARCH
-            </div>
-            <div class="nameBtn" >
-            <button class="nameBtn">
-                SEARCH BY NAME
-            </button>
-            </div>
-            <div class="flexChild">
-            SEARCH TYPES
-            </div>
-        </div>
-    </section> -->
-
-    <!-- <form action="*************************************">
-    <section class="parentContainer">
-        <div class="flexChild">
-            SEARCH BOXES
-        </div>
-        <div class="flexChild">
-            SEARCH BOXES
-        </div>
-    </section> --> 
-    
-    <!-- <section class="userInput container">
-        <button class="userNameBtn" onclick="document.getElementById('user').style.display='block'">
-        Whats Your Name?</button>
-
-        <!- <button class="startHereBtn">Start</button>    -->
-
-        <!-- <button class="inputText" placeholder="      Whats Your Name?" style="background:transparent"></button> 
-
-        <button type="submit"><i style="fa-solid fa-xl search;max-width:300px;max-height:200px"></i></button> 
-    </form> 
-    </section> -->
-
-    <!-- Fontawsome styles  for icon buttons-->
-    <!-- <i class="fa-solid fa-user">Whats your Name</i> -->
-
-<!-- 
-    <form class="nameSearch" style="margin:auto;max-width:300px max-height:200px">
-        <input type="text" placeholder="Pokemon Name..." name="search2">
-        <button type="submit"><i class="fa fa search" max width:300px></i></button>
-    </form> -->
-    <!-- <div class="flexChild">
-        SEARCH BOXES
-    </div>
-    <div class="flexChild">
-        SEARCH BOXES
-</div>
-</section> -->
-<!---- Coolors Palette Widget -->
-<!-- <script src="https://coolors.co/palette-widget/widget.js"></script>
-<script data-id="024812273560749865">new CoolorsPaletteWidget("024812273560749865", ["560bad","7209b7","f72585","fdc500","ffd500"],"yellows"); </script> -->
-
-<!--<section class="parentContainer2">
-    <div class="MainBox"></div> --> 
-        <!-- side 1 of 2  to show a list-->
-
-
-        <!--display search info side 2 of 2 -->
-    <!-- <div class="flexChild pokemonsInfo">pokemons-info</div>
-    <div class="flexChild pokemonsImg">pokemons-img>
-    < div class="flexChild pokemonsImg">pokemons-img> -->
-<!-- ****** check this -->
-    <!-- <div class="flexChild pokemonsName">pokemons-name</div>    
-    <div class="flexChild pokemonsTypes"></div>
-    <span class="typeHolder type1">WATER</span> <hr><Hr></Hr><span class="typeHolder type2">FIRE</span></div>
-    <div class="pokemonsDeets">pokemons-deets</div>
-    
-    </div>
-
-    </div> --> 
+  <!-- Button trigger modal -->
+<!-- <button type="button" class="parentContainer" data-toggle="modal" data-target="#exampleModalLong">
+  Movie Search Made Easy.. Start Here..
+  </button> -->
   
+  <!-- Modal -->
+  <!-- <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">WHIST? Where Have I Seen Them ?</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+        Is it driving you crazy? Have you been trying to work out where you have seen them before? 
+        Help is at hand with WHIST. Simply search the name of the film or box set and the cast lists will help you find their previous roles to help you identify them
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- --------------------------------------------------------------------------------------------------------->
+<div class="jumbotron">
+<!-- <div class="jumbotron jumbotron-fluid" col-lg-6 col-md-8 col-s-12> -->
+    <div class="container">
+  <h1 class="display-4">Whats On At the Movies </h1>
+  <p class="lead">Looking for Inspiration?
 
+    Search Below
+  </p>
+  <hr class="my-4">
+  <!-- <p>Easy Retrieval of YOUR Searches.</p> -->
+  
+</div>
 
+<form id="filmform">
+<div class="input">
+  <label form="inputfilm" placeholder="Search Here" aria-label="Search"></label>
+  <input type="text" id="inputfilm">
+  <a class="btn btn-primary btn-lg" role="button" 
+data-toggle="modal" data-target="#exampleModal">Search</a>
+</div> 
+<!-- <div id ="container" 
+</div> -->
+<!-- <section class="firstfilm" -->
+
+<div id ="filmdata">
+  <p>Title: <span id="title">TITLE </span></p>
+  <p>Year: <span id="year"> </span></p>
+  <p>Score: <span id="score_average"> </span></p>
+  <p>IMDB ID: <span id="imdbid"> </span></p>
+  <p>TMDB ID: <span id="tmdbid">ID </span></p>
+
+</div>
+
+<!-- <div class="card-group">
+  <div class="card">
+
+    <div class="card-body">
+      <h2 class="card-title">Card title</h2>
+      <img class="card-img-top" src="/images/3 - Horror template.png" alt="Card image cap">
+      <p class="card-text">SEARCH. </p>
+
+    </div>
+  </div> -->
+  <div class="card">
+    <img class="card-img-top" src="/images/25.png" alt="Card image cap">
+    <div class="card-body">
+      <!-- <h6 class="card-title">Search Films</h6>
+      <p class="card-text">SEARCH.</p> -->
+       
+    </div>
+  </div>
+  <!-- <div class="card">
+    <img class="card-img-top" src="/images/3 - romcom template.png" alt="Card image cap">
+    <div class="card-body">
+      <h4 class="card-title">Card title</h4>
+      <p class="card-text">SEARCH.</p>
+
+    </div>
+  </div> -->
+</div>
+</section>
+<div class="container">
+  <div class="row">
+
+    <!-- <div class="card"> -->
+      <div class="col-lg-4 col-md-6 col-s-12">
+
+  <!--------------------------------------------------------------------------------------------------------- --> 
+  <!-- <div class="card-deck"> -->
+    <!-- <div class="card"> -->
+      <!-- <div class="card-body"> -->
+        <!-- <h5 class="card-title">Comedy</h5> -->
+        <!-- <img src="./images/0 - comedy template.png" alt="comedytemplate">
+
+      </div> -->
+    <!-- </div> -->
+    <!-- <div class="card"> -->
+      <!-- <div class="card-body">
+        <h5 class="card-title">Horror</h5>
+        <img src="./images/1 - Horror template.png" alt="horrortemplate">
+      </div> -->
+    <!-- </div> -->
+    <!-- <div class="card"> -->
+      <!-- <div class="card-body">
+        <h5 class="card-title">Romcom</h5>
+        <img src="./images/0 - romcom template.png" alt="romcomtemplate">
+      </div> -->
+    <!-- </div> -->
+  </div>
 
 
 
@@ -176,12 +162,13 @@
         src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous">
+    
     </script>
 
 <!--Linked JS Script-->
     <script src ="./js/index.js"></script>
-    </body>
+  </body>
 </html>
 <!-- <footer>        
-                            Made with love using POKEAPI. 
+                            Made with Love, Blood, Sweat & Tears
                         </footer> -->
