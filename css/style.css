@@ -7,7 +7,7 @@
 }
 body {
 background-image: url("/images/AdobeStock_368779641.jpg");
-/* background-image: max 100%; */
+background-image: max 100%;
 /* max-width: 60px; */
   /* background-color: #7209b7; */ 
 }
