@@ -1,10 +1,13 @@
 
-let filmsform = document.querySelector("#filmform")
-let searchinput = document.querySelector(".input")
+let searchinput = document.querySelector("#inputfilm")
+// let filmsform = document.querySelector("#filmform")
+// let searchinput = document.querySelector(".input")
 let searchbtn = document.querySelector(".btn")
 let yourselection = document.querySelector("#displayresults")
 let filmdata = document.querySelector(".firstfilm")
-let container1 =  document.querySelector("#container")
+let container1 =  document.querySelector("#container") 
+var title = document.querySelector("#title") 
+var year = document.querySelector('#year')
 let films = []
 
 let loadfilms = function() {
@@ -35,10 +38,6 @@ const options = {
 	}
 };
 
-fetch('https://mdblist.p.rapidapi.com/?s=jaws&l=10', options)
-	.then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err));
 
 // __JAVASCRIPT FETCH END____________________________
 
@@ -60,18 +59,16 @@ fetch('https://mdblist.p.rapidapi.com/?s=jaws&l=10', options)
 // JQUERY END
 
 // Local storage
-let searchfunction = function(event) {
+let searchfunction = function(event) { 
+	console.log('started')
 	event.preventDefault();
 let film = searchinput.value.trim();
-
+  console.log(film)
 if (film) {
 
 	getfilmdata(film);
-
-	yourselection.textcontent = "";
-	displayresults.replacechildren();
-
-	searchinput.value ="";
+     
+	
 	}
 else {
 	alert("Your Selctionif not Valid");
@@ -81,7 +78,34 @@ else {
 
 let getfilmdata = function (film) {
 	console.log(film)
+
+	fetch('https://mdblist.p.rapidapi.com/?s=' + film + '&l=1', options)
+	 .then(function(response) {
+		// request was successful
+		if (response.ok) {
+		  response.json().then(function(data) {
+		displaydata(data); // why does this break everything?? 
+			
+		})
+	}
+});
+		 
+
+		
 	
+} 
+
+var displaydata = function (data){
+	title.textContent = data.search[0].title 
+	console.log(title);
+	year.textcontent = data.search[0].year 
+
+	yourselection.textcontent = "";
+	displayresults.replacechildren(); 
+
+	
+
+	searchinput.value ="";
 }
 
 
