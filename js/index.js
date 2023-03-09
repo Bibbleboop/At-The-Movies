@@ -101,8 +101,8 @@ var displaydata = function (data){
 	year.textcontent = data.search[0].year 
 
 	yourselection.textcontent = "";
-	displayresults.replacechildren(); 
-
+	// displayresults.replacechildren(); 
+	displayresults(); 
 	
 
 	searchinput.value ="";
