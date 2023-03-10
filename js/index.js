@@ -84,7 +84,7 @@ let getfilmdata = function (film) {
 		// request was successful
 		if (response.ok) {
 		  response.json().then(function(data) {
-		displaydata(data); // why does this break everything?? 
+		displaydata(data);  
 			
 		})
 	}
@@ -97,7 +97,7 @@ let getfilmdata = function (film) {
 
 var displaydata = function (data){
 	title.textContent = data.search[0].title 
-	console.log(title);
+	console.log('#title');
 	year.textcontent = data.search[0].year 
 
 	yourselection.textcontent = "";
@@ -109,12 +109,34 @@ var displaydata = function (data){
 }
 
 
-// <!-- Load icon library -->
+// <!-- function to render buttons and append -->
 
+function renderButtons() {
+	
+	let filmsCard = $('#filmdata');	
+	let filmsContainer = $('#filmdata');
 
+	//create button for each movies 
+	films.forEach(function (film) {
+		let filmButton = $('<button');
+		filmButton.text(film);
+		filmButton.attr("data-film", film);
+		filmsCard.append(filmButton);
+		filmsContainer.append(filmButton);
+	});
+}
+$("add-movie").on("click", function() {
+	event.preventDefault();
 
+		let newFilm = $('#title').val().trim();
+		console.log(newFilm);
 
+		films.push(newFilm);
+		renderButtons();
 
+});
+
+renderButtons();
 // Add event listener 
 
 searchbtn.addEventListener("click", searchfunction);
