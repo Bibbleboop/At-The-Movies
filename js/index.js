@@ -1,6 +1,6 @@
 
 let searchinput = document.querySelector("#inputfilm")
-// let filmsform = document.querySelector("#filmform")
+let filmsform = document.querySelector("#filmform")
 // let searchinput = document.querySelector(".input")
 let searchbtn = document.querySelector(".btn")
 let yourselection = document.querySelector("#displayresults")
@@ -60,14 +60,14 @@ const options = {
 
 // Local storage
 let searchfunction = function(event) { 
-	console.log('started')
+	// console.log('started')
 	event.preventDefault();
 let film = searchinput.value.trim();
-  console.log(film)
+  	console.log(film)
 if (film) {
 
 	getfilmdata(film);
-     
+
 	
 	}
 else {
@@ -80,58 +80,50 @@ let getfilmdata = function (film) {
 	console.log(film)
 
 	fetch('https://mdblist.p.rapidapi.com/?s=' + film + '&l=1', options)
-	 .then(function(response) {
-		// request was successful
-		if (response.ok) {
-		  response.json().then(function(data) {
-		displaydata(data);  
-			
-		})
-	}
+	.then(function(response) {
+	// request was successful
+	if (response.ok) {
+		response.json().then(function(data) {
+	displaydata(data);  
+		})	}
 });
-		 
-
-		
-	
 } 
 
 var displaydata = function (data){
 	title.textContent = data.search[0].title 
-	console.log('#title');
-	year.textcontent = data.search[0].year 
-
+	// console.log('#title');
+	// score.textcontent = data.search[0].score
+	// 	// console.log('#score');
 	yourselection.textcontent = "";
 	// displayresults.replacechildren(); 
 	// 	displayresults(); 
-	
-
 	searchinput.value ="";
-}
+}   
 
-
-// <!-- function to render buttons and append -->
+// <!-- function to render all the film buttons and append -->
 
 function renderButtons() {
-	
-	let filmsCard = $('#filmdata');	
-	let filmsContainer = $('#filmdata');
+	// let filmsCard = $('filmdata');	
+	// let filmsContainer = $('#filmdata');
+	let filmsCard = $('#displayresults');	
+	// let filmsContainer = $('#displayresults');
 
-	//create button for each movies 
+	//create button for each film and append
 	films.forEach(function (film) {
-		let filmButton = $('<button');
+		let filmButton = $('<button>');
 		filmButton.text(film);
 		filmButton.attr("data-film", film);
+		// filmsCard.append(filmButton);
 		filmsCard.append(filmButton);
-		filmsContainer.append(filmButton);
 	});
 }
-$("add-movie").on("click", function() {
+$("addfilm").on("click", function(event) {
 	event.preventDefault();
 
-		let newFilm = $('#title').val().trim();
-		console.log(newFilm);
+		let newFilm = $('getfilmdata').val().trim();
+		console.log(newFilm); 
 
-		films.push(newFilm);
+		film.push(newFilm);
 		renderButtons();
 
 });
