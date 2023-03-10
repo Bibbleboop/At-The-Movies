@@ -1,19 +1,36 @@
 //GLOBAL CSS FOR BORDERS AND PADDING
 *{
     box-sizing: border-box;
-    border-radius: 6%;
+    border-radius: 5%;
     /* margin: #7209b7 6px;
     padding: yellow 4px; */
-    padding: 5px;
+    padding: 20px;
+    margin: 20px;
+    font-family: poppins;
     /* border: #48cae4 solid 5px; */
 }
-
-
 body {
 background-image: url("/images/AdobeStock_368779641.jpg");
 background-image: max 100%;
 /* max-width: 60px; */
   /* background-color: #7209b7; */ 
+}
+body {
+    /* background: #A02323;
+    background: -webkit-linear-gradient ( to right, #d62828, #48cae4);
+    background: linear-gradient(to right, #a2d2ff, #d62828); */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* font-color: navy bold; */
+    font-size: 2.2em;   
+    padding: 20px;
+    margin: 20px;
+    font: #7209b7;
+    color: #7209b7
+    font-color: #90e0ef;
 }
 /* .tiledBackground {
     background-image: url("/images/Lights Camera Action.jpeg");
@@ -26,27 +43,15 @@ background-image: max 100%;
     /* background-image: url("../images/Image 1.png"); */
     /* background-size: 1200px;
     width: 300px;
-    height: 300px; */ */
+    height: 300px; */ 
 
 }
-
+// RESPONSIVE CSS
 /* For mobile phones: */
 [class*="col-"] {
     width: 100%;
   }
-  #filmform {
-    border: solid navy 2px;
-    radius: 25%;
-    height: 400px;
-    /* display: centre; */
-  }
-  <h2> {
-    text: bold;
-    font-color: #0096c7;
-    font-family: poppins;
-    border: #0096c7 solid 60px;
-    font-size:20px;
-  }
+
   @media only screen and (min-width: 600px) {
     /* For tablets: */
     .col-s-1 {width: 8.33%;}
@@ -78,10 +83,56 @@ background-image: max 100%;
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
   }
+  #filmform {
+    border: solid navy 2px;
+    radius: 25%;
+    height: 400px;
+    /* display: centre; */
+  }
+  <h2> {
+    text: bold;
+    font: #7209b7;
+    color: #7209b7
+    font-family: poppins;
+    border-radius: 5%;
+    border: #0096c7 solid 60px;
+    font-size:80px;
+  }
+  h5
+<h5> {
+    text: bold;
+    font-color: #0096c7;
+    font: #7209b7;
+    color: #7209b7
+    font-family: poppins;
+    font-size:50px;
+}
+h1 {
+    /* background: shadow; */
+    font-align: center;
+    font-family: poppins;
+    font-size: 45px;
+    color: #90e0ef;
+    font: #7209b7;
+    color: #7209b7
+    margin-bottom: 11px;
+    }
+h5 {
+    background: shadow;
+    font-align: center;
+    font-family: poppins;
+    font-size: 45px;
+    color: #ee82ee;
+    font: #7209b7;
+    color: #7209b7
+    margin-bottom: 11px;
+    }
 .typeHolder {
     display: flex;
     background-color: #7209b7;
     font-color: #0096c7;
+    font: #7209b7;
+    color: #7209b7
     text-align: center;
 }
 .inputText {
@@ -96,89 +147,105 @@ background-image: max 100%;
     font-color: #ffc500
     height: flex;
     width-min; 250px;
+    border-radius: 5%;
     border: #0096c7 solid 340px;
 }
 
-h5
-<h5> {
-    text: bold;
-    font-color: #0096c7;
-    font-family: poppins;
-    font-size:20px;
-}
+
 .parentContainer2 {
     display: flex;
     /* background-color: #48cae4; */
     padding: 20px;
-    margin: 10px;
+    margin: 20px;
     height: flex;
-    width: auto;6
+    width: auto;
+    border-radius: 5%;
     border: #0096c7 solid 6px;
 }
 .card-img-top {
     /* background-color: #48cae4; */
-    padding: 10px;
     border: #fde522 20px;
+    border-radius: 5%;
     font-family: poppins;
     text-align: centre;
     width-min: 100%;
-    margin: 10px;
-    radius: 10%;
+    padding: 20px;
+    margin: 20px;
+    radius: 40%;
     height: 500px;
-}
-.nameInput {
-    background-color: #fdc500;
-    padding: 10px;
-    font-family: poppins;
-    text-align: auto;
-    width-min: 150px;
-    margin: 10px;
-    height: 100px;
-}
-.nameSearch {
-    background-color: #fdc500;
-    padding: 10px;
-    font-family: poppins;
-    text-align: centre;
-    width-min: 150px;
-    margin: 10px;
-    height: 50px;
-    border: #7209b7 solid 6px;
-}
-.flexImage {
-    display: flex;
-    height: auto;
-    width: auto;
-    margin: #fdc500 10px;
-    padding: #560bad 10px;
 }
 
 .card-body {
     /* col-lg-12 col-md-6 col-sm-1 */
     max-width: 90%;
+    padding: 20px;
+    margin: 20px;
     border: #fde522 20px;
+    border-radius: 5%;
 }
 .card-body {
     max-width: 300px;
+    padding: 20px;
+    margin: 20px;
     border: #fde522 20px;
     max-height: 300px;
     font: #ffffff;
-    radius:90%;
+    border-radius: 5%;
 }
 .card {
-    background: none;
+    background: #a2d2ff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5%;
     border: #fde522 20px;
 }
+.nameInput {
+    background-color: #fdc500;
+    padding: 20px;
+    margin: 20px;
+    font-family: poppins;
+    border-radius: 5%;
+    text-align: auto;
+    width-min: 150px;
+    height: 100px;
+}
+.nameSearch {
+    background-color: #fdc500;
+    padding: 20px;
+    margin: 20px;
+    font-family: poppins;
+    text-align: centre;
+    width-min: 150px;
+    height: 50px;
+    border: #7209b7 solid 6px;
+    border-radius: 5%;
+}
+.flexImage {
+    display: flex;
+    border-radius: 5%;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    margin: 20px;
+    /* margin: #fdc500 10px; */
+    padding: #560bad 10px;
+}
+
 .display-4 {
     font: #90e0ef;
+    padding: 20px;
+    margin: 20px;
     display:center;
+    border-radius: 5%;
     col-lg-12 col-md-6 col-sm-1
     max-width: 100%;
 }
 displayresults {
     font: #90e0ef;
-    padding: 0 0 0 50px;
-    display:right;
+    padding: 20px;
+    margin: 20px;
+    display: right;
+    border-radius: 5%;
     col-lg-12 col-md-6 col-sm-1
     max-width: 100%;    
 }
@@ -188,53 +255,35 @@ displayresults {
     col-lg-12 col-md-6 col-sm-1
     max-width: 100%;  
     background-color: #fdc500;
-    padding: 10px;
+    padding: 20px;
+    margin: 20px;
     font-family: poppins;
     text-align: centre;
     width-min: 150px;
-    margin: 10px;
     height: 50px;
+    border-radius: 5%;
     border: #7209b7 solid 6px;  
 }
-body {
-    /* background: #A02323;
-    background: -webkit-linear-gradient ( to right, #d62828, #48cae4);
-    background: linear-gradient(to right, #a2d2ff, #d62828); */
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: poppins;    
-    margin: 20px red;
-    padding: 20px;
-    font: #90e0ef;
-}
-h1 {
-    /* background: shadow; */
-    font-align: center;
-    font-family: poppins;
-    font-size: 45px;
-    color: #90e0ef;
-    margin-bottom: 1px;
-    }
-h5 {
-    background: shadow;
-    font-align: center;
-    font-family: poppins;
-    font-size: 45px;
-    color: #ee82ee;
-    margin-bottom: 1px;
-    }
+
 .lead {
-    color: #90e0ef;
+    /* color: #90e0ef; */
+    color: #280659;
+    font-size: 40px;
+    font-family: sans-ser
+    border-radius: 5%;
+    padding: 1% 30% 1% 10%;
+    border: navy solid 1px;
 }
 .MainBox {
     display: flex;
     border: #0096c7 solid 6px;
+    border-radius: 5%;
     height: 500px;
     width: 500px;
-    margin: 25px red solid;
+    padding: 20px;
+    margin: 20px;
+    /* margin: 25px red solid; */
     
     /* background-color: royalblue;     */
 }
@@ -245,9 +294,11 @@ h5 {
 .jumbotron {
     background: #2286f2;
     display: centre;
-    border: shadow 6px #0077b6;
-    radius: 69%;
-
+    border: shadow 6px #0096c7;
+    border-radius: 5%;
+    /* padding: 40px; */
+    padding: 0% 3% 0% 3%;
+    margin: 0%;
 }
 /* .jumboton { */
     /* background-color: #48cae4; */
@@ -269,52 +320,51 @@ h5 {
     /* vertical-align: baseline;
     touch-action: manipulation;
 } */
-.button-1 {
+/* .button-1 {
     hover;
     focus; 
     background-color: #F082AC;
-}
-.btn {
+} */
+/* .btn {
     /* background-color:#0096c7; */
-    border: #023e8a shadow 7px;
+    /* border: #023e8a shadow 7px;
     font-size: 30px;
     font-family: poppins;
     border-radius:99px;
     padding: 10px;
-    
-
-}
+   } 
+    */
 .hidden {
     display: none;
 }
-.userNameBtn {
+/* .userNameBtn {
     /* background-color:#48cae4; */
-    font-size: 50px;
+    /* font-size: 500px;
     /* border: yellow solid 66px; */
-    border: #560bad solid 66px;
-    font-family: poppins;
+    /* border: #560bad solid 66px;
+    border-radius: 10%;
+    font-family: poppins;  */
     /* border-radius: 105px; */
-    padding: 40px;
-    
-}
-.nameBtn {
-    background-color: #48cae4;
+    /* padding: 20px;
+    margin: 20px;
+} */
+   
+/* .nameBtn {
+    background-color: #560bad;
     padding: 10px;
     font-family: poppins;
     text-align: centre;
     width-min: 150px;
-    margin: 10px;
     height: 50px;
-}
-.searchboxheader {
-    background-color: #48cae4;
+} */
+/* .searchboxheader {
+    background-color: #560bad;
     padding: 10px;
     font-family: poppins;
     text-align: centre;
     width-min: 150px;
-    margin: 10px;
     height: 50px;
-}
+} */
 // Extra small devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap
 
