@@ -1,12 +1,16 @@
+//GLOBAL CSS FOR BORDERS AND PADDING
 *{
     box-sizing: border-box;
-    border-radius: 75px;
-    margin: #7209b7 6px;
-    padding: yellow 4px;
-    border: #48cae4 dash 5px;
+    border-radius: 6%;
+    /* margin: #7209b7 6px;
+    padding: yellow 4px; */
+    padding: 5px;
+    /* border: #48cae4 solid 5px; */
 }
+
+
 body {
-/* background-image: url("/images/AdobeStock_368779641.jpg"); */
+background-image: url("/images/AdobeStock_368779641.jpg");
 background-image: max 100%;
 /* max-width: 60px; */
   /* background-color: #7209b7; */ 
@@ -17,14 +21,24 @@ background-image: max 100%;
     width: 300px;
     height: 300px; */
 /* } */
+
+.tiledBackground {
+    /* background-image: url("../images/Image 1.png"); */
+    /* background-size: 1200px;
+    width: 300px;
+    height: 300px; */ */
+
+}
+
 /* For mobile phones: */
 [class*="col-"] {
     width: 100%;
   }
   #filmform {
-    border: black solid 2px;
-    height: 40px;
-    display: centre;
+    border: solid navy 2px;
+    radius: 25%;
+    height: 400px;
+    /* display: centre; */
   }
   <h2> {
     text: bold;
@@ -72,7 +86,7 @@ background-image: max 100%;
 }
 .inputText {
     background-colour: #48cae4;
-    border: #0096c7 solid 6px;
+    border: #0096c7 solid 26px;
 }
 .parentContainer {
     display: flex;
@@ -82,7 +96,7 @@ background-image: max 100%;
     font-color: #ffc500
     height: flex;
     width-min; 250px;
-    border: #0096c7 solid 60px;
+    border: #0096c7 solid 340px;
 }
 
 h5
@@ -98,12 +112,13 @@ h5
     padding: 20px;
     margin: 10px;
     height: flex;
-    width: auto;
+    width: auto;6
     border: #0096c7 solid 6px;
 }
 .card-img-top {
     /* background-color: #48cae4; */
     padding: 10px;
+    border: #fde522 20px;
     font-family: poppins;
     text-align: centre;
     width-min: 100%;
@@ -137,25 +152,22 @@ h5
     margin: #fdc500 10px;
     padding: #560bad 10px;
 }
-.jumbotron {
-    background: #0e0e0e;
-    display: centre;
-    margin: solid 5px #0077b6;
-    radius: 69%;
 
-}
 .card-body {
     /* col-lg-12 col-md-6 col-sm-1 */
     max-width: 90%;
+    border: #fde522 20px;
 }
 .card-body {
     max-width: 300px;
+    border: #fde522 20px;
     max-height: 300px;
     font: #ffffff;
     radius:90%;
 }
 .card {
     background: none;
+    border: #fde522 20px;
 }
 .display-4 {
     font: #90e0ef;
@@ -226,15 +238,22 @@ h5 {
     
     /* background-color: royalblue;     */
 }
-.button {
+/* .button {
     background-colour: #ee82ee;
-}
+} */
 /* CSS */
-.jumboton {
+.jumbotron {
+    background: #2286f2;
+    display: centre;
+    border: shadow 6px #0077b6;
+    radius: 69%;
+
+}
+/* .jumboton { */
     /* background-color: #48cae4; */
-    border-radius: 70px;
+    /* border-radius: 70px;
     box-sizing: border-box;
-    /* color: #FFFFFF; */
+    color: #F2286f2;
     cursor: pointer;
     font-color: #ee82ee
     display: inline-block;
@@ -245,11 +264,11 @@ h5 {
     line-height: 20px;
     padding: 86px;
     position: relative;
-    text-align: center;
+    text-align: center; */
     /* transition: color 100ms; */
-    vertical-align: baseline;
+    /* vertical-align: baseline;
     touch-action: manipulation;
-}
+} */
 .button-1 {
     hover;
     focus; 
@@ -257,7 +276,7 @@ h5 {
 }
 .btn {
     /* background-color:#0096c7; */
-    border: #023e8a solid 3px;
+    border: #023e8a shadow 7px;
     font-size: 30px;
     font-family: poppins;
     border-radius:99px;
@@ -270,10 +289,11 @@ h5 {
 }
 .userNameBtn {
     /* background-color:#48cae4; */
-    font-size: 20px;
-    border: #560bad solid 6px;
+    font-size: 50px;
+    /* border: yellow solid 66px; */
+    border: #560bad solid 66px;
     font-family: poppins;
-    border-radius: 105px;
+    /* border-radius: 105px; */
     padding: 40px;
     
 }
