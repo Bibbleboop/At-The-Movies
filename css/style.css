@@ -4,22 +4,24 @@
     border-radius: 5%;
     /* margin: #7209b7 6px;
     padding: yellow 4px; */
+    /* background-color: #7209b7;  */
     padding: 20px;
     margin: 20px;
     font-family: poppins;
     /* border: #48cae4 solid 5px; */
 }
 body {
-background-image: url("/images/AdobeStock_368779641.jpg");
+/* background-image: scr =("/images/AdobeStock_368779641.jpg"); */
+/* background-image: src="./images/AdobeStock_368779641.jpg"  */
 background-image: max 100%;
 /* max-width: 60px; */
-  /* background-color: #7209b7; */ 
+  background-color: #0077b6; 
 }
 body {
     /* background: #A02323;
     background: -webkit-linear-gradient ( to right, #d62828, #48cae4);
     background: linear-gradient(to right, #a2d2ff, #d62828); */
-
+    background-image: url('1.jpg';) 
     display: flex;
     flex-direction: column;
     justify-content: center;
